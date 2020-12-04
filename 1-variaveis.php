@@ -80,8 +80,10 @@ function teste1(){
 
 //GLOBAL
 function teste2(){
-    //global $nome;  //Define global uma variavel
+    //global $nome;  //Define global uma variavel, sempre defina no mesmo local acima da variavel caso ela seja local
     echo $GLOBALS['nome'];  //A superglobal define qualquer variavel em uma global
+    global $idade2;
+    $idade2 = 21;
 }
 
 
@@ -89,6 +91,7 @@ echo "<br>Sem definicao de escopo global = ";
 teste1();
 echo "Com definicao de escopo global = ";
 teste2();
+echo "<br>Com definicao de escopo global dentro de um local = $idade2";
 
 
 ?>
