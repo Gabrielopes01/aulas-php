@@ -44,4 +44,18 @@ var_dump($arquivo);
 $nulo = NULL;   //Espaço em nulo, sem valor atribuido
 
 
+
+////////////////////////////////////////////////////////////////////
+//Variavei Pre Definidas ou GLOBAIS
+
+$nome = $_GET['nomezinho'];  //O GET retorna valores de um  form de forma visivel na barra de URL, inclusive pode ser definido pelo URL
+//Vamos adicionar na barra de URL o ?nomezinho=nome
+echo "<br>";
+echo $nome;
+
+$idade = $_GET['idadezinha'];
+//Vamos adicionar na barra de URL o &idadezinha=20
+echo "<br>";
+echo $idade;
+
 ?>
