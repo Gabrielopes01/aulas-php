@@ -4,7 +4,7 @@
 echo "<h1>Funções</h1>";
 $nome = "gabriel";
 echo "String = $nome<br>";
-echo "<hr>"; 
+echo "<hr>";
 //Deixa todas as letras maiusculas
 echo "strtoupper() = ".strtoupper($nome)."<br>";
 //Deixa as letras inicias maiusculas de cada palavra
