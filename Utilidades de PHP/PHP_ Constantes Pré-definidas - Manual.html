@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.php.net/manual/pt_BR/reserved.constants.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt_BR" class=" js flexbox flexboxlegacy datauri"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PHP: Constantes Pré-definidas - Manual </title>
+
+ <link rel="shortcut icon" href="https://www.php.net/favicon.ico">
+ <link rel="search" type="application/opensearchdescription+xml" href="http://php.net/phpnetimprovedsearch.src" title="Add PHP.net search">
+ <link rel="alternate" type="application/atom+xml" href="https://www.php.net/releases/feed.php" title="PHP Release feed">
+ <link rel="alternate" type="application/atom+xml" href="https://www.php.net/feed.atom" title="PHP: Hypertext Preprocessor">
+
+ <link rel="canonical" href="https://www.php.net/manual/pt_BR/reserved.constants.php">
+ <link rel="shorturl" href="https://www.php.net/manual/pt_BR/reserved.constants.php">
+ <link rel="alternate" href="https://www.php.net/manual/pt_BR/reserved.constants.php" hreflang="x-default">
+
+ <link rel="contents" href="https://www.php.net/manual/pt_BR/index.php">
+ <link rel="index" href="https://www.php.net/manual/pt_BR/reserved.php">
+ <link rel="prev" href="https://www.php.net/manual/pt_BR/reserved.classes.php">
+ <link rel="next" href="https://www.php.net/manual/pt_BR/reserved.other-reserved-words.php">
+
+ <link rel="alternate" href="https://www.php.net/manual/en/reserved.constants.php" hreflang="en">
+ <link rel="alternate" href="https://www.php.net/manual/pt_BR/reserved.constants.php" hreflang="pt_BR">
+ <link rel="alternate" href="https://www.php.net/manual/zh/reserved.constants.php" hreflang="zh">
+ <link rel="alternate" href="https://www.php.net/manual/fr/reserved.constants.php" hreflang="fr">
+ <link rel="alternate" href="https://www.php.net/manual/de/reserved.constants.php" hreflang="de">
+ <link rel="alternate" href="https://www.php.net/manual/ja/reserved.constants.php" hreflang="ja">
+ <link rel="alternate" href="https://www.php.net/manual/ro/reserved.constants.php" hreflang="ro">
+ <link rel="alternate" href="https://www.php.net/manual/ru/reserved.constants.php" hreflang="ru">
+ <link rel="alternate" href="https://www.php.net/manual/es/reserved.constants.php" hreflang="es">
+ <link rel="alternate" href="https://www.php.net/manual/tr/reserved.constants.php" hreflang="tr">
+
+<link rel="stylesheet" type="text/css" href="./PHP_ Constantes Pré-definidas - Manual_files/cached.php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_ Constantes Pré-definidas - Manual_files/cached(1).php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_ Constantes Pré-definidas - Manual_files/cached(2).php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_ Constantes Pré-definidas - Manual_files/cached(3).php" media="screen">
+
+ <!--[if lte IE 7]>
+ <link rel="stylesheet" type="text/css" href="https://www.php.net/styles/workarounds.ie7.css" media="screen">
+ <![endif]-->
+
+ <!--[if lte IE 8]>
+ <script>
+  window.brokenIE = true;
+ </script>
+ <![endif]-->
+
+ <!--[if lte IE 9]>
+ <link rel="stylesheet" type="text/css" href="https://www.php.net/styles/workarounds.ie9.css" media="screen">
+ <![endif]-->
+
+ <!--[if IE]>
+ <script src="https://www.php.net/js/ext/html5.js"></script>
+ <![endif]-->
+
+ <!--<base href="https://www.php.net/manual/pt_BR/reserved.constants.php">--><base href=".">
+
+
+</head>
+<body class="docs " style="">
+
+<nav id="head-nav" class="navbar navbar-fixed-top">
+  <div class="navbar-inner clearfix">
+    <a href="https://www.php.net/" class="brand"><img src="./PHP_ Constantes Pré-definidas - Manual_files/php-logo.svg" width="48" height="24" alt="php"></a>
+    <div id="mainmenu-toggle-overlay"></div>
+    <input type="checkbox" id="mainmenu-toggle">
+    <ul class="nav">
+      <li class=""><a href="https://www.php.net/downloads">Downloads</a></li>
+      <li class="active"><a href="https://www.php.net/docs.php">Documentation</a></li>
+      <li class=""><a href="https://www.php.net/get-involved">Get Involved</a></li>
+      <li class=""><a href="https://www.php.net/support">Help</a></li>
+      <li class="">
+        <a href="https://www.php.net/releases/8.0/index.php">
+          <img src="./PHP_ Constantes Pré-definidas - Manual_files/logo_php8.svg" alt="php8" height="22" width="60">
+        </a>
+      </li>
+    </ul>
+    <form class="navbar-search" id="topsearch" action="https://www.php.net/search.php">
+      <input type="hidden" name="show" value="quickref">
+      <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="tt-hint search-query" type="text" autocomplete="off" spellcheck="off" disabled="" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input type="search" name="pattern" class="search-query tt-query" placeholder="Search" accesskey="s" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><input type="submit" style="visibility: hidden; position: fixed"><span style="position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: &quot;Fira Sans&quot;, &quot;Source Sans Pro&quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></span><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"></span></span>
+    </form>
+  </div>
+  <div id="flash-message"></div>
+</nav>
+<div class="headsup"><a href="https://www.php.net/conferences/index.php#id2020-11-30-1">PHPKonf 2020 Online</a></div>
+<nav id="trick"><div><dl>
+<dt><a href="https://www.php.net/manual/en/getting-started.php">Getting Started</a></dt>
+	<dd><a href="https://www.php.net/manual/en/introduction.php">Introduction</a></dd>
+	<dd><a href="https://www.php.net/manual/en/tutorial.php">A simple tutorial</a></dd>
+<dt><a href="https://www.php.net/manual/en/langref.php">Language Reference</a></dt>
+	<dd><a href="https://www.php.net/manual/en/language.basic-syntax.php">Basic syntax</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.types.php">Types</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.variables.php">Variables</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.constants.php">Constants</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.expressions.php">Expressions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.operators.php">Operators</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.control-structures.php">Control Structures</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.functions.php">Functions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.oop5.php">Classes and Objects</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.namespaces.php">Namespaces</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.errors.php">Errors</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.exceptions.php">Exceptions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.generators.php">Generators</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.attributes.php">Attributes</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.references.php">References Explained</a></dd>
+	<dd><a href="https://www.php.net/manual/en/reserved.variables.php">Predefined Variables</a></dd>
+	<dd><a href="https://www.php.net/manual/en/reserved.exceptions.php">Predefined Exceptions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/reserved.interfaces.php">Predefined Interfaces and Classes</a></dd>
+	<dd><a href="https://www.php.net/manual/en/context.php">Context options and parameters</a></dd>
+	<dd><a href="https://www.php.net/manual/en/wrappers.php">Supported Protocols and Wrappers</a></dd>
+</dl>
+<dl>
+<dt><a href="https://www.php.net/manual/en/security.php">Security</a></dt>
+	<dd><a href="https://www.php.net/manual/en/security.intro.php">Introduction</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.general.php">General considerations</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.cgi-bin.php">Installed as CGI binary</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.apache.php">Installed as an Apache module</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.sessions.php">Session Security</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.filesystem.php">Filesystem Security</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.database.php">Database Security</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.errors.php">Error Reporting</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.globals.php">Using Register Globals</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.variables.php">User Submitted Data</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.magicquotes.php">Magic Quotes</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.hiding.php">Hiding PHP</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.current.php">Keeping Current</a></dd>
+<dt><a href="https://www.php.net/manual/en/features.php">Features</a></dt>
+	<dd><a href="https://www.php.net/manual/en/features.http-auth.php">HTTP authentication with PHP</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.cookies.php">Cookies</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.sessions.php">Sessions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.xforms.php">Dealing with XForms</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.file-upload.php">Handling file uploads</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.remote-files.php">Using remote files</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.connection-handling.php">Connection handling</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.persistent-connections.php">Persistent Database Connections</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.commandline.php">Command line usage</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.gc.php">Garbage Collection</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.dtrace.php">DTrace Dynamic Tracing</a></dd>
+</dl>
+<dl>
+<dt><a href="https://www.php.net/manual/en/funcref.php">Function Reference</a></dt>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.php.php">Affecting PHP's Behaviour</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.audio.php">Audio Formats Manipulation</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.remote.auth.php">Authentication Services</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.cmdline.php">Command Line Specific Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.compression.php">Compression and Archive Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.crypto.php">Cryptography Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.database.php">Database Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.calendar.php">Date and Time Related Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.fileprocess.file.php">File System Related Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.international.php">Human Language and Character Encoding Support</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.image.php">Image Processing and Generation</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.remote.mail.php">Mail Related Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.math.php">Mathematical Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.nontext.php">Non-Text MIME Output</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.fileprocess.process.php">Process Control Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.other.php">Other Basic Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.remote.other.php">Other Services</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.search.php">Search Engine Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.server.php">Server Specific Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.session.php">Session Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.text.php">Text Processing</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.vartype.php">Variable and Type Related Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.webservice.php">Web Services</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.windows.php">Windows Only Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.xml.php">XML Manipulation</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.ui.php">GUI Extensions</a></dd>
+</dl>
+<dl>
+<dt>Keyboard Shortcuts</dt><dt>?</dt>
+<dd>This help</dd>
+<dt>j</dt>
+<dd>Next menu item</dd>
+<dt>k</dt>
+<dd>Previous menu item</dd>
+<dt>g p</dt>
+<dd>Previous man page</dd>
+<dt>g n</dt>
+<dd>Next man page</dd>
+<dt>G</dt>
+<dd>Scroll to bottom</dd>
+<dt>g g</dt>
+<dd>Scroll to top</dd>
+<dt>g h</dt>
+<dd>Goto homepage</dd>
+<dt>g s</dt>
+<dd>Goto search<br>(current page)</dd>
+<dt>/</dt>
+<dd>Focus search box</dd>
+</dl></div></nav>
+<div id="goto">
+    <div class="search">
+         <div class="text"></div>
+         <div class="results"><ul></ul></div>
+   </div>
+</div>
+
+  <div id="breadcrumbs" class="clearfix">
+    <div id="breadcrumbs-inner">
+          <div class="next">
+        <a href="https://www.php.net/manual/pt_BR/reserved.other-reserved-words.php">
+          Lista de outras palavras reservadas »
+        </a>
+      </div>
+              <div class="prev">
+        <a href="https://www.php.net/manual/pt_BR/reserved.classes.php">
+          « Classes Predefinidas        </a>
+      </div>
+          <ul>
+            <li><a href="https://www.php.net/manual/pt_BR/index.php">Manual do PHP</a></li>      <li><a href="https://www.php.net/manual/pt_BR/appendices.php">Apêndices</a></li>      <li><a href="https://www.php.net/manual/pt_BR/reserved.php">Lista de Palavras Reservadas do PHP</a></li>      </ul>
+    </div>
+  </div>
+
+
+
+
+<div id="layout" class="clearfix">
+  <section id="layout-content">
+  <div class="page-tools">
+    <div class="change-language">
+      <form action="https://www.php.net/manual/change.php" method="get" id="changelang" name="changelang">
+        <fieldset>
+          <label for="changelang-langs">Change language:</label>
+          <select onchange="document.changelang.submit()" name="page" id="changelang-langs">
+            <option value="en/reserved.constants.php">English</option>
+            <option value="pt_BR/reserved.constants.php" selected="selected">Brazilian Portuguese</option>
+            <option value="zh/reserved.constants.php">Chinese (Simplified)</option>
+            <option value="fr/reserved.constants.php">French</option>
+            <option value="de/reserved.constants.php">German</option>
+            <option value="ja/reserved.constants.php">Japanese</option>
+            <option value="ro/reserved.constants.php">Romanian</option>
+            <option value="ru/reserved.constants.php">Russian</option>
+            <option value="es/reserved.constants.php">Spanish</option>
+            <option value="tr/reserved.constants.php">Turkish</option>
+            <option value="help-translate.php">Other</option>
+          </select>
+        </fieldset>
+      </form>
+    </div>
+    <div class="edit-bug">
+      <a href="https://edit.php.net/?project=PHP&amp;perm=pt_BR/reserved.constants.php">Edit</a>
+      <a href="https://bugs.php.net/report.php?bug_type=Documentation+problem&amp;manpage=reserved.constants">Report a Bug</a>
+    </div>
+  </div><div id="reserved.constants" class="sect1">
+  <h2 class="title">Constantes Pré-definidas<a class="genanchor" href="https://www.php.net/manual/pt_BR/reserved.constants.php#reserved.constants"> ¶</a></h2>
+  
+
+ <div class="sect2" id="reserved.constants.core">
+   <h3 class="title">Principais Constantes Predefinidas<a class="genanchor" href="https://www.php.net/manual/pt_BR/reserved.constants.php#reserved.constants.core"> ¶</a></h3>
+   <p class="simpara">
+    Essas constantes são definidas pelo núcleo do PHP. Isso inclui o PHP,
+    o engine do Zend e módulos SAPI.
+   </p>
+   <dl>
+
+    
+     <dt id="constant.php-version">
+      <strong><code>PHP_VERSION</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       A versão atual do PHP como uma string no formato
+       "major.minor.release[extra]".
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-major-version">
+      <strong><code>PHP_MAJOR_VERSION</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O número de versão "major" do PHP como um inteiro (exemplo: int(5)
+       para a versão "5.2.7-extra"). Disponível a partir do PHP 5.2.7.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-minor-version">
+      <strong><code>PHP_MINOR_VERSION</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O número de versão "minor" do PHP como um inteiro (exemplo: int(2)
+       para a versão "5.2.7-extra"). Disponível a partir do PHP 5.2.7.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-release-version">
+      <strong><code>PHP_RELEASE_VERSION</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O número de versão "release" do PHP como um inteiro (exemplo: int(7)
+       para a versão "5.2.7-extra"). Disponível a partir do PHP 5.2.7.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-version-id">
+      <strong><code>PHP_VERSION_ID</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       A versão atual do PHP como um inteiro, útil
+       para comparações entre versões (exemplo: int(50207) na versão "5.2.7-extra").
+       Disponível a partir do PHP 5.2.7.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-extra-version">
+      <strong><code>PHP_EXTRA_VERSION</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       A versão "extra" do PHP como uma string (exemplo: '-extra'
+       na versão "5.2.7-extra"). Geralmente utilizado por distribuidores
+       para indicar uma versão de empacotamento. Disponível a partir do
+       PHP 5.2.7.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-zts">
+      <strong><code>PHP_ZTS</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Disponível a partir do PHP 5.2.7.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-debug">
+      <strong><code>PHP_DEBUG</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Disponível a partir do PHP 5.2.7.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-maxpathlen">
+      <strong><code>PHP_MAXPATHLEN</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O tamanho máximo do nome de um arquivo (incluindo seus diretórios) suportado
+       nesta versão do PHP. Disponível a partir do PHP 5.3.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-os">
+      <strong><code>PHP_OS</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O sistema operacional para o qual o PHP foi compilado.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-os-family">
+      <strong><code>PHP_OS_FAMILY</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       A família do sistema operacional para o qual o PHP foi compilado. Qualquer uma entre
+       <code class="literal">'Windows'</code>, <code class="literal">'BSD'</code>,
+       <code class="literal">'Darwin'</code>, <code class="literal">'Solaris'</code>,
+       <code class="literal">'Linux'</code> ou <code class="literal">'Unknown'</code>.
+       Disponível a partir do PHP 7.2.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-sapi">
+      <strong><code>PHP_SAPI</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O nome da Server API para esta compilação do PHP.
+       Veja também <span class="function"><a href="https://www.php.net/manual/pt_BR/function.php-sapi-name.php" class="function">php_sapi_name()</a></span>.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-eol">
+      <strong><code>PHP_EOL</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O simbolo correto de 'Fim de linha' para esta plataforma.
+       Disponível a partir do PHP 5.0.2.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-int-max">
+      <strong><code>PHP_INT_MAX</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O maior inteiro suportado nesta compilação do PHP. Geralmente int(2147483647)
+       em sistemas de 32 bit e int(9223372036854775807) em sistemas de 64 bits.
+       Disponível a partir do PHP 5.0.5.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-int-min">
+      <strong><code>PHP_INT_MIN</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O menor inteiro suportado nesta compilação do PHP. Geralmente int(-2147483648) em sistemas 32 bits e
+       int(-9223372036854775808) em sistemas 64 bit. Disponível a partir do PHP 7.0.0.
+       Normalmente PHP_INT_MIN === ~PHP_INT_MAX.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-int-size">
+      <strong><code>PHP_INT_SIZE</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O tamanho de um inteiro em bytes nesta compilação do PHP. Disponível a partir do PHP 5.0.5.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-float-dig">
+      <strong><code>PHP_FLOAT_DIG</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Número de dígitos decimais que podem ser arredondados para um float e recuperados
+       sem perda de precisão.
+       Disponível a partir do PHP 7.2.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-float-epsilon">
+      <strong><code>PHP_FLOAT_EPSILON</code></strong>
+      (<span class="type">float</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O menor número positivo representável x, tal que <code class="literal">x + 1.0 !=
+       1.0</code>.
+       Disponível a partir do PHP 7.2.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-float-min">
+      <strong><code>PHP_FLOAT_MIN</code></strong>
+      (<span class="type">float</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O menor número de ponto flutuante <em class="emphasis">positivo</em> representável.
+       Se voce precisar do menor número de ponto flutuante <em class="emphasis">negativo</em>, use <code class="literal">- PHP_FLOAT_MAX</code>.
+       Disponível a partir do PHP 7.2.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-float-max">
+      <strong><code>PHP_FLOAT_MAX</code></strong>
+      (<span class="type">float</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O maior número de ponto flutuante representável.
+       Disponível a partir do PHP 7.2.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.default-include-path">
+      <strong><code>DEFAULT_INCLUDE_PATH</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.pear-install-dir">
+      <strong><code>PEAR_INSTALL_DIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.pear-extension-dir">
+      <strong><code>PEAR_EXTENSION_DIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-extension-dir">
+      <strong><code>PHP_EXTENSION_DIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-prefix">
+      <strong><code>PHP_PREFIX</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O valor configurado em "--prefix" na compilação do PHP.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-bindir">
+      <strong><code>PHP_BINDIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Especifica o caminho onde os binários foram instalados.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-binary">
+      <strong><code>PHP_BINARY</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Especifica o caminho do binário do PHP utilizado na execução do script.
+       Disponível a partir do PHP 5.4.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-mandir">
+      <strong><code>PHP_MANDIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Especifica onde as páginas do manual foram instaladas.
+       Disponível a partir do PHP 5.3.7.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-libdir">
+      <strong><code>PHP_LIBDIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-datadir">
+      <strong><code>PHP_DATADIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-sysconfdir">
+      <strong><code>PHP_SYSCONFDIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-localstatedir">
+      <strong><code>PHP_LOCALSTATEDIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-config-file-path">
+      <strong><code>PHP_CONFIG_FILE_PATH</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-config-file-scan-dir">
+      <strong><code>PHP_CONFIG_FILE_SCAN_DIR</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-shlib-suffix">
+      <strong><code>PHP_SHLIB_SUFFIX</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O sufixo de bibliotecas compartilhadas da plataforma na qual o PHP foi compilado. Geralmente "so" (Unixes)
+       ou "dll" (Windows).
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-fd-setsize">
+      <strong><code>PHP_FD_SETSIZE</code></strong>
+      (<span class="type">string</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       O número máximo de descritores de arquivos para as chamadas de sistema select. Disponível
+       a partir do PHP 7.1.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-error">
+      <strong><code>E_ERROR</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-warning">
+      <strong><code>E_WARNING</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-parse">
+      <strong><code>E_PARSE</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-notice">
+      <strong><code>E_NOTICE</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-core-error">
+      <strong><code>E_CORE_ERROR</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-core-warning">
+      <strong><code>E_CORE_WARNING</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-compile-error">
+      <strong><code>E_COMPILE_ERROR</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-compile-warning">
+      <strong><code>E_COMPILE_WARNING</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-user-error">
+      <strong><code>E_USER_ERROR</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-user-warning">
+      <strong><code>E_USER_WARNING</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-user-notice">
+      <strong><code>E_USER_NOTICE</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-recoverble-error">
+      <strong><code>E_RECOVERABLE_ERROR</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>.
+       Disponível a partir do PHP 5.2.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-deprecated">
+      <strong><code>E_DEPRECATED</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>.
+       Disponível a partir do PHP 5.3.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-user-deprecated">
+      <strong><code>E_USER_DEPRECATED</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>.
+       Disponível a partir do PHP 5.3.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-all">
+      <strong><code>E_ALL</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.e-strict">
+      <strong><code>E_STRICT</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       <a href="https://www.php.net/manual/pt_BR/errorfunc.constants.php" class="link">Constante para relatório de erros</a>
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.compiler-halt-offset">
+      <strong><code>__COMPILER_HALT_OFFSET__</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Disponível a partir do PHP 5.1.0.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.true">
+      <strong><code>TRUE</code></strong>
+      (<span class="type">boolean</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Veja <a href="https://www.php.net/manual/pt_BR/language.types.boolean.php" class="link">Booleanos</a>.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.false">
+      <strong><code>FALSE</code></strong>
+      (<span class="type">boolean</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Veja <a href="https://www.php.net/manual/pt_BR/language.types.boolean.php" class="link">Booleanos</a>.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.null">
+      <strong><code>NULL</code></strong>
+      (<span class="type">boolean</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Veja <a href="https://www.php.net/manual/pt_BR/language.types.null.php" class="link">Null</a>.
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-windows-event-ctrl-c">
+      <strong><code>PHP_WINDOWS_EVENT_CTRL_C</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Um evento do Windows <code class="literal">CTRL+C</code>.
+       Disponível a partir do PHP 7.4.0 (somente para o Windows).
+      </span>
+     </dd>
+
+    
+    
+     <dt id="constant.php-windows-event-ctrl-break">
+      <strong><code>PHP_WINDOWS_EVENT_CTRL_BREAK</code></strong>
+      (<span class="type">integer</span>)
+     </dt>
+
+     <dd>
+
+      <span class="simpara">
+       Um evento do Windows <code class="literal">CTRL+BREAK</code>.
+       Disponível a partir do PHP 7.4.0 (somente para o Windows).
+      </span>
+     </dd>
+
+    
+   </dl>
+
+   <p class="para">
+    Veja também: <a href="https://www.php.net/manual/pt_BR/language.constants.predefined.php" class="link">Constantes
+    Mágicas</a>.
+   </p>
+ </div>
+
+
+
+  
+
+
+ <div class="sect2" id="reserved.constants.standard">
+   <h3 class="title">Constantes Padrão Predefinidas<a class="genanchor" href="https://www.php.net/manual/pt_BR/reserved.constants.php#reserved.constants.standard"> ¶</a></h3>
+   <p class="simpara">
+    Todas as constantes de <a href="https://www.php.net/manual/pt_BR/extensions.membership.php#extensions.membership.core" class="link">extensões do 
+    núcleo</a> são definidas no PHP por padrão.
+   </p>
+ </div>
+
+
+
+ </div>
+<section id="usernotes">
+ <div class="head">
+  <span class="action"><a href="https://www.php.net/manual/add-note.php?sect=reserved.constants&amp;redirect=https://www.php.net/manual/pt_BR/reserved.constants.php"><img src="./PHP_ Constantes Pré-definidas - Manual_files/notes-add@2x.png" alt="add a note" width="12" height="12"> <small>add a note</small></a></span>
+  <h3 class="title">User Contributed Notes <span class="count">3 notes</span></h3>
+ </div><div id="allnotes">
+  <div class="note" id="113172">  <div class="votes">
+    <div id="Vu113172">
+    <a href="https://www.php.net/manual/vote-note.php?id=113172&amp;page=reserved.constants&amp;vote=up" title="Vote up!" class="usernotes-voteu">up</a>
+    </div>
+    <div id="Vd113172">
+    <a href="https://www.php.net/manual/vote-note.php?id=113172&amp;page=reserved.constants&amp;vote=down" title="Vote down!" class="usernotes-voted">down</a>
+    </div>
+    <div class="tally" id="V113172" title="55% like this...">
+    11
+    </div>
+  </div>
+  <a href="https://www.php.net/manual/pt_BR/reserved.constants.php#113172" class="name">
+  <strong class="user"><em>rdcapasso</em></strong></a><a class="genanchor" href="https://www.php.net/manual/pt_BR/reserved.constants.php#113172"> ¶</a><div class="date" title="2013-09-08 09:16"><strong>7 years ago</strong></div>
+  <div class="text" id="Hcom113172">
+<div class="phpcode"><code><span class="html">
+Volker's getOS() function needs to have the order of cases changed in the switch statement since "darwin" contains "win", which means that both "windows" and "darwin" will return self::OS_WIN. I've moved the 'dar' case above the 'win' case:<br><br><span class="default">&lt;?php<br></span><span class="keyword">class </span><span class="default">System </span><span class="keyword">{<br><br>&nbsp; &nbsp; const </span><span class="default">OS_UNKNOWN </span><span class="keyword">= </span><span class="default">1</span><span class="keyword">;<br>&nbsp; &nbsp; const </span><span class="default">OS_WIN </span><span class="keyword">= </span><span class="default">2</span><span class="keyword">;<br>&nbsp; &nbsp; const </span><span class="default">OS_LINUX </span><span class="keyword">= </span><span class="default">3</span><span class="keyword">;<br>&nbsp; &nbsp; const </span><span class="default">OS_OSX </span><span class="keyword">= </span><span class="default">4</span><span class="keyword">;<br><br>&nbsp; &nbsp; </span><span class="comment">/**<br>&nbsp; &nbsp;&nbsp; * @return int<br>&nbsp; &nbsp;&nbsp; */<br>&nbsp; &nbsp; </span><span class="keyword">static public function </span><span class="default">getOS</span><span class="keyword">() {<br>&nbsp; &nbsp; &nbsp; &nbsp; switch (</span><span class="default">true</span><span class="keyword">) {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case </span><span class="default">stristr</span><span class="keyword">(</span><span class="default">PHP_OS</span><span class="keyword">, </span><span class="string">'DAR'</span><span class="keyword">): return </span><span class="default">self</span><span class="keyword">::</span><span class="default">OS_OSX</span><span class="keyword">;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case </span><span class="default">stristr</span><span class="keyword">(</span><span class="default">PHP_OS</span><span class="keyword">, </span><span class="string">'WIN'</span><span class="keyword">): return </span><span class="default">self</span><span class="keyword">::</span><span class="default">OS_WIN</span><span class="keyword">;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; case </span><span class="default">stristr</span><span class="keyword">(</span><span class="default">PHP_OS</span><span class="keyword">, </span><span class="string">'LINUX'</span><span class="keyword">): return </span><span class="default">self</span><span class="keyword">::</span><span class="default">OS_LINUX</span><span class="keyword">;<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default : return </span><span class="default">self</span><span class="keyword">::</span><span class="default">OS_UNKNOWN</span><span class="keyword">;<br>&nbsp; &nbsp; &nbsp; &nbsp; }<br>&nbsp; &nbsp; }<br><br>}<br></span><span class="default">?&gt;</span>
+</span>
+</code></div>
+  </div>
+ </div>
+  <div class="note" id="116600">  <div class="votes">
+    <div id="Vu116600">
+    <a href="https://www.php.net/manual/vote-note.php?id=116600&amp;page=reserved.constants&amp;vote=up" title="Vote up!" class="usernotes-voteu">up</a>
+    </div>
+    <div id="Vd116600">
+    <a href="https://www.php.net/manual/vote-note.php?id=116600&amp;page=reserved.constants&amp;vote=down" title="Vote down!" class="usernotes-voted">down</a>
+    </div>
+    <div class="tally" id="V116600" title="45% like this...">
+    -7
+    </div>
+  </div>
+  <a href="https://www.php.net/manual/pt_BR/reserved.constants.php#116600" class="name">
+  <strong class="user"><em>Anonymous</em></strong></a><a class="genanchor" href="https://www.php.net/manual/pt_BR/reserved.constants.php#116600"> ¶</a><div class="date" title="2015-01-27 03:25"><strong>5 years ago</strong></div>
+  <div class="text" id="Hcom116600" style="opacity: 0.35;">
+<div class="phpcode"><code><span class="html">
+PHP_EOL can be used like that:<br><br><span class="default">&lt;?php<br><br>$data </span><span class="keyword">= </span><span class="string">'some data'</span><span class="keyword">.</span><span class="default">PHP_EOL</span><span class="keyword">;<br></span><span class="default">$fp </span><span class="keyword">= </span><span class="default">fopen</span><span class="keyword">(</span><span class="string">'somefile'</span><span class="keyword">, </span><span class="string">'a'</span><span class="keyword">);<br></span><span class="default">fwrite</span><span class="keyword">(</span><span class="default">$fp</span><span class="keyword">, </span><span class="default">$data</span><span class="keyword">);<br><br></span><span class="default">?&gt;<br></span><br>Which is the same of \r\n or \n depending on the OS.<br>You can put those lines in a while for example, and create a log file.</span>
+</code></div>
+  </div>
+ </div>
+  <div class="note" id="120140">  <div class="votes">
+    <div id="Vu120140">
+    <a href="https://www.php.net/manual/vote-note.php?id=120140&amp;page=reserved.constants&amp;vote=up" title="Vote up!" class="usernotes-voteu">up</a>
+    </div>
+    <div id="Vd120140">
+    <a href="https://www.php.net/manual/vote-note.php?id=120140&amp;page=reserved.constants&amp;vote=down" title="Vote down!" class="usernotes-voted">down</a>
+    </div>
+    <div class="tally" id="V120140" title="18% like this...">
+    -44
+    </div>
+  </div>
+  <a href="https://www.php.net/manual/pt_BR/reserved.constants.php#120140" class="name">
+  <strong class="user"><em>nabikaz at gmail dot com</em></strong></a><a class="genanchor" href="https://www.php.net/manual/pt_BR/reserved.constants.php#120140"> ¶</a><div class="date" title="2016-11-10 10:18"><strong>4 years ago</strong></div>
+  <div class="text" id="Hcom120140" style="opacity: 0.35;">
+<div class="phpcode"><code><span class="html">
+Don't use `PHP_EOL` for textarea of form to array, use it:<br><br>array_values(array_filter(explode("\n", str_replace("\r", '', $_POST['data']))))</span>
+</code></div>
+  </div>
+ </div></div>
+
+ <div class="foot"><a href="https://www.php.net/manual/add-note.php?sect=reserved.constants&amp;redirect=https://www.php.net/manual/pt_BR/reserved.constants.php"><img src="./PHP_ Constantes Pré-definidas - Manual_files/notes-add@2x.png" alt="add a note" width="12" height="12"> <small>add a note</small></a></div>
+</section>    </section><!-- layout-content -->
+        <aside class="layout-menu">
+
+        <ul class="parent-menu-list">
+                                    <li>
+                <a href="https://www.php.net/manual/pt_BR/reserved.php">Lista de Palavras Reservadas do PHP</a>
+
+                                    <ul class="child-menu-list">
+
+                                                <li class="">
+                            <a href="https://www.php.net/manual/pt_BR/reserved.keywords.php" title="Lista de Palavras-​chave (Keywords)">Lista de Palavras-​chave (Keywords)</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/pt_BR/reserved.classes.php" title="Classes Predefinidas">Classes Predefinidas</a>
+                        </li>
+                                                <li class="current">
+                            <a href="https://www.php.net/manual/pt_BR/reserved.constants.php" title="Constantes Pré-​definidas">Constantes Pré-​definidas</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/pt_BR/reserved.other-reserved-words.php" title="Lista de outras palavras reservadas">Lista de outras palavras reservadas</a>
+                        </li>
+                        
+                    </ul>
+                
+            </li>
+                        
+                    </ul>
+    </aside>
+
+
+  </div><!-- layout -->
+
+  <footer>
+    <div class="container footer-content">
+      <div class="row-fluid">
+      <ul class="footmenu">
+        <li><a href="https://www.php.net/copyright.php">Copyright © 2001-2020 The PHP Group</a></li>
+        <li><a href="https://www.php.net/my.php">My PHP.net</a></li>
+        <li><a href="https://www.php.net/contact.php">Contact</a></li>
+        <li><a href="https://www.php.net/sites.php">Other PHP.net sites</a></li>
+        <li><a href="https://www.php.net/privacy.php">Privacy policy</a></li>
+      </ul>
+      </div>
+    </div>
+  </footer>
+
+    
+ <!-- External and third party libraries. -->
+ <script src="./PHP_ Constantes Pré-definidas - Manual_files/jquery.min.js.download"></script>
+<script src="./PHP_ Constantes Pré-definidas - Manual_files/cached(4).php"></script>
+<script src="./PHP_ Constantes Pré-definidas - Manual_files/cached(5).php"></script>
+<script src="./PHP_ Constantes Pré-definidas - Manual_files/cached(6).php"></script>
+<script src="./PHP_ Constantes Pré-definidas - Manual_files/cached(7).php"></script>
+<script src="./PHP_ Constantes Pré-definidas - Manual_files/cached(8).php"></script>
+<script src="./PHP_ Constantes Pré-definidas - Manual_files/cached(9).php"></script>
+
+<a id="toTop" href="javascript:;"><span id="toTopHover"></span><img width="40" height="40" alt="To Top" src="./PHP_ Constantes Pré-definidas - Manual_files/to-top@2x.png"></a>
+
+
+
+</body></html>
