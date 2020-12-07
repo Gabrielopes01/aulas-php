@@ -17,9 +17,9 @@ print_r($pessoas);
 
 echo "<br> JSON Encode = ".json_encode($pessoas);
 
-$jason = '[{"nome":"Jo\u00e3o","idade":"20"},{"nome":"Gabriel","idade":"19"}]';
+$json = '[{"nome":"Jo\u00e3o","idade":"20"},{"nome":"Gabriel","idade":"19"}]';
 
-$decodificado = json_decode($jason, true);
+$decodificado = json_decode($json, true); //O true tarnsforma o objeto em array
 echo "<br> JSON Decode = ";
 print_r($decodificado);
 ?>
