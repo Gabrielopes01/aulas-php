@@ -12,6 +12,9 @@ foreach ($result as $row) {
 
     foreach ($row as $coluna => $valor) {
         echo "<strong>".$coluna."</strong>= ".$valor."<br>";
+        if($coluna=="deslogin" && $valor=="Jorge"){
+            echo "Haha";
+        }
     }
 
     echo "<hr>";
