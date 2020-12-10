@@ -53,7 +53,7 @@ for($id; $id<20 ;$id++){
 }
 
 //$con->rollback();  //Apaga os dados e mudanças ate a transação
-$con->commit();
+$con->commit();  //Salva todos os dados alterados a partir do transact5ion
 
 echo "Deletado com commit";
 
