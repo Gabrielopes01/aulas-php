@@ -1,0 +1,8 @@
+{
+    "name": "aulaphp",
+    "description": "aula de composer",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "1.0.*"
+    }
+}

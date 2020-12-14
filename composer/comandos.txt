@@ -1,0 +1,5 @@
+composer init = Inicia o composer e cria o seu arquivo
+composer install = instala as dependencias do arquivo composer
+
+
+php-fig.org  = Um site de modelos e boas praticas de PHP

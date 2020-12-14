@@ -17,6 +17,6 @@ set_error_handler("error_handler");
 echo 100/0;
 
 
-//error_reporting(E_ALL & ~E_NOTICE); //Diz que todos os erros vao ser exibidos, menos os notices
+//error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING); //Diz que todos os erros vao ser exibidos, menos os notices
 
 ?>
