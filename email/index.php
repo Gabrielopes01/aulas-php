@@ -39,7 +39,7 @@ $mail->Username = 'email';
 $mail->Password = 'senha';
 
 //Set who the message is to be sent from
-$mail->setFrom('gabrielperinotto95@gmail.com', 'Curso');
+$mail->setFrom('email', 'Curso');
 
 //Set an alternative reply-to address
 //$mail->addReplyTo('replyto@example.com', 'First Last');
