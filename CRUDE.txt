@@ -1,0 +1,6 @@
+CRUD é o necessário em toda a estrutura que mexe com Banco de Dados
+
+C - CREATE - Criar um valor e adiciona ao BD
+R - READ - Consulta valores no BD
+U - UPDATE - Atualiza dados no BD
+D - Delete - Deleta dados do BD

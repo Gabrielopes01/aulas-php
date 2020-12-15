@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://www.php.net/manual/en/function.openssl-get-cipher-methods.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" class=" js flexbox flexboxlegacy datauri"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PHP: openssl_get_cipher_methods - Manual </title>
+
+ <link rel="shortcut icon" href="https://www.php.net/favicon.ico">
+ <link rel="search" type="application/opensearchdescription+xml" href="http://php.net/phpnetimprovedsearch.src" title="Add PHP.net search">
+ <link rel="alternate" type="application/atom+xml" href="https://www.php.net/releases/feed.php" title="PHP Release feed">
+ <link rel="alternate" type="application/atom+xml" href="https://www.php.net/feed.atom" title="PHP: Hypertext Preprocessor">
+
+ <link rel="canonical" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php">
+ <link rel="shorturl" href="https://www.php.net/openssl-get-cipher-methods">
+ <link rel="alternate" href="https://www.php.net/openssl-get-cipher-methods" hreflang="x-default">
+
+ <link rel="contents" href="https://www.php.net/manual/en/index.php">
+ <link rel="index" href="https://www.php.net/manual/en/ref.openssl.php">
+ <link rel="prev" href="https://www.php.net/manual/en/function.openssl-get-cert-locations.php">
+ <link rel="next" href="https://www.php.net/manual/en/function.openssl-get-curve-names.php">
+
+ <link rel="alternate" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php" hreflang="en">
+ <link rel="alternate" href="https://www.php.net/manual/pt_BR/function.openssl-get-cipher-methods.php" hreflang="pt_BR">
+ <link rel="alternate" href="https://www.php.net/manual/zh/function.openssl-get-cipher-methods.php" hreflang="zh">
+ <link rel="alternate" href="https://www.php.net/manual/fr/function.openssl-get-cipher-methods.php" hreflang="fr">
+ <link rel="alternate" href="https://www.php.net/manual/de/function.openssl-get-cipher-methods.php" hreflang="de">
+ <link rel="alternate" href="https://www.php.net/manual/ja/function.openssl-get-cipher-methods.php" hreflang="ja">
+ <link rel="alternate" href="https://www.php.net/manual/ro/function.openssl-get-cipher-methods.php" hreflang="ro">
+ <link rel="alternate" href="https://www.php.net/manual/ru/function.openssl-get-cipher-methods.php" hreflang="ru">
+ <link rel="alternate" href="https://www.php.net/manual/es/function.openssl-get-cipher-methods.php" hreflang="es">
+ <link rel="alternate" href="https://www.php.net/manual/tr/function.openssl-get-cipher-methods.php" hreflang="tr">
+
+<link rel="stylesheet" type="text/css" href="./PHP_ openssl_get_cipher_methods - Manual_files/cached.php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_ openssl_get_cipher_methods - Manual_files/cached(1).php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_ openssl_get_cipher_methods - Manual_files/cached(2).php" media="screen">
+<link rel="stylesheet" type="text/css" href="./PHP_ openssl_get_cipher_methods - Manual_files/cached(3).php" media="screen">
+
+ <!--[if lte IE 7]>
+ <link rel="stylesheet" type="text/css" href="https://www.php.net/styles/workarounds.ie7.css" media="screen">
+ <![endif]-->
+
+ <!--[if lte IE 8]>
+ <script>
+  window.brokenIE = true;
+ </script>
+ <![endif]-->
+
+ <!--[if lte IE 9]>
+ <link rel="stylesheet" type="text/css" href="https://www.php.net/styles/workarounds.ie9.css" media="screen">
+ <![endif]-->
+
+ <!--[if IE]>
+ <script src="https://www.php.net/js/ext/html5.js"></script>
+ <![endif]-->
+
+ <!--<base href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php">--><base href=".">
+
+
+</head>
+<body class="docs " style="">
+
+<nav id="head-nav" class="navbar navbar-fixed-top">
+  <div class="navbar-inner clearfix">
+    <a href="https://www.php.net/" class="brand"><img src="./PHP_ openssl_get_cipher_methods - Manual_files/php-logo.svg" width="48" height="24" alt="php"></a>
+    <div id="mainmenu-toggle-overlay"></div>
+    <input type="checkbox" id="mainmenu-toggle">
+    <ul class="nav">
+      <li class=""><a href="https://www.php.net/downloads">Downloads</a></li>
+      <li class="active"><a href="https://www.php.net/docs.php">Documentation</a></li>
+      <li class=""><a href="https://www.php.net/get-involved">Get Involved</a></li>
+      <li class=""><a href="https://www.php.net/support">Help</a></li>
+      <li class="">
+        <a href="https://www.php.net/releases/8.0/index.php">
+          <img src="./PHP_ openssl_get_cipher_methods - Manual_files/logo_php8.svg" alt="php8" height="22" width="60">
+        </a>
+      </li>
+    </ul>
+    <form class="navbar-search" id="topsearch" action="https://www.php.net/search.php">
+      <input type="hidden" name="show" value="quickref">
+      <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="tt-hint search-query" type="text" autocomplete="off" spellcheck="off" disabled="" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input type="search" name="pattern" class="search-query tt-query" placeholder="Search" accesskey="s" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><input type="submit" style="visibility: hidden; position: fixed"><span style="position: absolute; left: -9999px; visibility: hidden; white-space: nowrap; font-family: &quot;Fira Sans&quot;, &quot;Source Sans Pro&quot;, Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></span><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"></span></span>
+    </form>
+  </div>
+  <div id="flash-message"></div>
+</nav>
+<nav id="trick"><div><dl>
+<dt><a href="https://www.php.net/manual/en/getting-started.php">Getting Started</a></dt>
+	<dd><a href="https://www.php.net/manual/en/introduction.php">Introduction</a></dd>
+	<dd><a href="https://www.php.net/manual/en/tutorial.php">A simple tutorial</a></dd>
+<dt><a href="https://www.php.net/manual/en/langref.php">Language Reference</a></dt>
+	<dd><a href="https://www.php.net/manual/en/language.basic-syntax.php">Basic syntax</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.types.php">Types</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.variables.php">Variables</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.constants.php">Constants</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.expressions.php">Expressions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.operators.php">Operators</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.control-structures.php">Control Structures</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.functions.php">Functions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.oop5.php">Classes and Objects</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.namespaces.php">Namespaces</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.errors.php">Errors</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.exceptions.php">Exceptions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.generators.php">Generators</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.attributes.php">Attributes</a></dd>
+	<dd><a href="https://www.php.net/manual/en/language.references.php">References Explained</a></dd>
+	<dd><a href="https://www.php.net/manual/en/reserved.variables.php">Predefined Variables</a></dd>
+	<dd><a href="https://www.php.net/manual/en/reserved.exceptions.php">Predefined Exceptions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/reserved.interfaces.php">Predefined Interfaces and Classes</a></dd>
+	<dd><a href="https://www.php.net/manual/en/context.php">Context options and parameters</a></dd>
+	<dd><a href="https://www.php.net/manual/en/wrappers.php">Supported Protocols and Wrappers</a></dd>
+</dl>
+<dl>
+<dt><a href="https://www.php.net/manual/en/security.php">Security</a></dt>
+	<dd><a href="https://www.php.net/manual/en/security.intro.php">Introduction</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.general.php">General considerations</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.cgi-bin.php">Installed as CGI binary</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.apache.php">Installed as an Apache module</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.sessions.php">Session Security</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.filesystem.php">Filesystem Security</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.database.php">Database Security</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.errors.php">Error Reporting</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.globals.php">Using Register Globals</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.variables.php">User Submitted Data</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.magicquotes.php">Magic Quotes</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.hiding.php">Hiding PHP</a></dd>
+	<dd><a href="https://www.php.net/manual/en/security.current.php">Keeping Current</a></dd>
+<dt><a href="https://www.php.net/manual/en/features.php">Features</a></dt>
+	<dd><a href="https://www.php.net/manual/en/features.http-auth.php">HTTP authentication with PHP</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.cookies.php">Cookies</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.sessions.php">Sessions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.xforms.php">Dealing with XForms</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.file-upload.php">Handling file uploads</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.remote-files.php">Using remote files</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.connection-handling.php">Connection handling</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.persistent-connections.php">Persistent Database Connections</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.commandline.php">Command line usage</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.gc.php">Garbage Collection</a></dd>
+	<dd><a href="https://www.php.net/manual/en/features.dtrace.php">DTrace Dynamic Tracing</a></dd>
+</dl>
+<dl>
+<dt><a href="https://www.php.net/manual/en/funcref.php">Function Reference</a></dt>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.php.php">Affecting PHP's Behaviour</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.audio.php">Audio Formats Manipulation</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.remote.auth.php">Authentication Services</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.cmdline.php">Command Line Specific Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.compression.php">Compression and Archive Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.crypto.php">Cryptography Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.database.php">Database Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.calendar.php">Date and Time Related Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.fileprocess.file.php">File System Related Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.international.php">Human Language and Character Encoding Support</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.image.php">Image Processing and Generation</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.remote.mail.php">Mail Related Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.math.php">Mathematical Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.nontext.php">Non-Text MIME Output</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.fileprocess.process.php">Process Control Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.other.php">Other Basic Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.remote.other.php">Other Services</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.search.php">Search Engine Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.server.php">Server Specific Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.session.php">Session Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.text.php">Text Processing</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.basic.vartype.php">Variable and Type Related Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.webservice.php">Web Services</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.utilspec.windows.php">Windows Only Extensions</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.xml.php">XML Manipulation</a></dd>
+	<dd><a href="https://www.php.net/manual/en/refs.ui.php">GUI Extensions</a></dd>
+</dl>
+<dl>
+<dt>Keyboard Shortcuts</dt><dt>?</dt>
+<dd>This help</dd>
+<dt>j</dt>
+<dd>Next menu item</dd>
+<dt>k</dt>
+<dd>Previous menu item</dd>
+<dt>g p</dt>
+<dd>Previous man page</dd>
+<dt>g n</dt>
+<dd>Next man page</dd>
+<dt>G</dt>
+<dd>Scroll to bottom</dd>
+<dt>g g</dt>
+<dd>Scroll to top</dd>
+<dt>g h</dt>
+<dd>Goto homepage</dd>
+<dt>g s</dt>
+<dd>Goto search<br>(current page)</dd>
+<dt>/</dt>
+<dd>Focus search box</dd>
+</dl></div></nav>
+<div id="goto">
+    <div class="search">
+         <div class="text"></div>
+         <div class="results"><ul></ul></div>
+   </div>
+</div>
+
+  <div id="breadcrumbs" class="clearfix">
+    <div id="breadcrumbs-inner">
+          <div class="next">
+        <a href="https://www.php.net/manual/en/function.openssl-get-curve-names.php">
+          openssl_get_curve_names »
+        </a>
+      </div>
+              <div class="prev">
+        <a href="https://www.php.net/manual/en/function.openssl-get-cert-locations.php">
+          « openssl_get_cert_locations        </a>
+      </div>
+          <ul>
+            <li><a href="https://www.php.net/manual/en/index.php">PHP Manual</a></li>      <li><a href="https://www.php.net/manual/en/funcref.php">Function Reference</a></li>      <li><a href="https://www.php.net/manual/en/refs.crypto.php">Cryptography Extensions</a></li>      <li><a href="https://www.php.net/manual/en/book.openssl.php">OpenSSL</a></li>      <li><a href="https://www.php.net/manual/en/ref.openssl.php">OpenSSL Functions</a></li>      </ul>
+    </div>
+  </div>
+
+
+
+
+<div id="layout" class="clearfix">
+  <section id="layout-content">
+  <div class="page-tools">
+    <div class="change-language">
+      <form action="https://www.php.net/manual/change.php" method="get" id="changelang" name="changelang">
+        <fieldset>
+          <label for="changelang-langs">Change language:</label>
+          <select onchange="document.changelang.submit()" name="page" id="changelang-langs">
+            <option value="en/function.openssl-get-cipher-methods.php" selected="selected">English</option>
+            <option value="pt_BR/function.openssl-get-cipher-methods.php">Brazilian Portuguese</option>
+            <option value="zh/function.openssl-get-cipher-methods.php">Chinese (Simplified)</option>
+            <option value="fr/function.openssl-get-cipher-methods.php">French</option>
+            <option value="de/function.openssl-get-cipher-methods.php">German</option>
+            <option value="ja/function.openssl-get-cipher-methods.php">Japanese</option>
+            <option value="ro/function.openssl-get-cipher-methods.php">Romanian</option>
+            <option value="ru/function.openssl-get-cipher-methods.php">Russian</option>
+            <option value="es/function.openssl-get-cipher-methods.php">Spanish</option>
+            <option value="tr/function.openssl-get-cipher-methods.php">Turkish</option>
+            <option value="help-translate.php">Other</option>
+          </select>
+        </fieldset>
+      </form>
+    </div>
+    <div class="edit-bug">
+      <a href="https://edit.php.net/?project=PHP&amp;perm=en/function.openssl-get-cipher-methods.php">Edit</a>
+      <a href="https://bugs.php.net/report.php?bug_type=Documentation+problem&amp;manpage=function.openssl-get-cipher-methods">Report a Bug</a>
+    </div>
+  </div><div id="function.openssl-get-cipher-methods" class="refentry">
+ <div class="refnamediv">
+  <h1 class="refname">openssl_get_cipher_methods</h1>
+  <p class="verinfo">(PHP 5 &gt;= 5.3.0, PHP 7)</p><p class="refpurpose"><span class="refname">openssl_get_cipher_methods</span> — <span class="dc-title">Gets available cipher methods</span></p>
+
+ </div>
+
+ <div class="refsect1 description" id="refsect1-function.openssl-get-cipher-methods-description">
+  <h3 class="title">Description<a class="genanchor" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#refsect1-function.openssl-get-cipher-methods-description"> ¶</a></h3>
+  <div class="methodsynopsis dc-description">
+   <span class="methodname"><strong>openssl_get_cipher_methods</strong></span>
+    ([ <span class="methodparam"><span class="type">bool</span> <code class="parameter">$aliases</code><span class="initializer"> = <strong><code>false</code></strong></span></span>
+  ] ) : <span class="type">array</span></div>
+
+  <p class="para rdfs-comment">
+   Gets a list of available cipher methods.
+  </p>
+
+ </div>
+
+
+ <div class="refsect1 parameters" id="refsect1-function.openssl-get-cipher-methods-parameters">
+  <h3 class="title">Parameters<a class="genanchor" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#refsect1-function.openssl-get-cipher-methods-parameters"> ¶</a></h3>
+  <dl>
+
+    
+     <dt>
+<code class="parameter">aliases</code></dt>
+
+     <dd>
+
+      <p class="para">
+       Set to <strong><code>true</code></strong> if cipher aliases should be included within the
+       returned <span class="type">array</span>.
+      </p>
+     </dd>
+
+    
+   </dl>
+
+  
+ </div>
+
+
+ <div class="refsect1 returnvalues" id="refsect1-function.openssl-get-cipher-methods-returnvalues">
+  <h3 class="title">Return Values<a class="genanchor" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#refsect1-function.openssl-get-cipher-methods-returnvalues"> ¶</a></h3>
+  <p class="para">
+   An <span class="type">array</span> of available cipher methods.
+  </p>
+ </div>
+
+
+ <div class="refsect1 examples" id="refsect1-function.openssl-get-cipher-methods-examples">
+  <h3 class="title">Examples<a class="genanchor" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#refsect1-function.openssl-get-cipher-methods-examples"> ¶</a></h3>
+  <div class="example" id="example-924">
+    <p><strong>Example #1 <span class="function"><strong>openssl_get_cipher_methods()</strong></span> example</strong></p>
+    <div class="example-contents"><p>
+     Shows how the available ciphers might look, and also which aliases
+     might be available.
+    </p></div>
+    <div class="example-contents">
+<div class="phpcode"><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br>$ciphers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">openssl_get_cipher_methods</span><span style="color: #007700">();<br></span><span style="color: #0000BB">$ciphers_and_aliases&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">openssl_get_cipher_methods</span><span style="color: #007700">(</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br></span><span style="color: #0000BB">$cipher_aliases&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_diff</span><span style="color: #007700">(</span><span style="color: #0000BB">$ciphers_and_aliases</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$ciphers</span><span style="color: #007700">);<br><br></span><span style="color: #FF8000">//ECB&nbsp;mode&nbsp;should&nbsp;be&nbsp;avoided<br></span><span style="color: #0000BB">$ciphers&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_filter</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$ciphers</span><span style="color: #007700">,&nbsp;function(</span><span style="color: #0000BB">$n</span><span style="color: #007700">)&nbsp;{&nbsp;return&nbsp;</span><span style="color: #0000BB">stripos</span><span style="color: #007700">(</span><span style="color: #0000BB">$n</span><span style="color: #007700">,</span><span style="color: #DD0000">"ecb"</span><span style="color: #007700">)===</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">;&nbsp;}&nbsp;);<br><br></span><span style="color: #FF8000">//At&nbsp;least&nbsp;as&nbsp;early&nbsp;as&nbsp;Aug&nbsp;2016,&nbsp;Openssl&nbsp;declared&nbsp;the&nbsp;following&nbsp;weak:&nbsp;RC2,&nbsp;RC4,&nbsp;DES,&nbsp;3DES,&nbsp;MD5&nbsp;based<br></span><span style="color: #0000BB">$ciphers&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_filter</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$ciphers</span><span style="color: #007700">,&nbsp;function(</span><span style="color: #0000BB">$c</span><span style="color: #007700">)&nbsp;{&nbsp;return&nbsp;</span><span style="color: #0000BB">stripos</span><span style="color: #007700">(</span><span style="color: #0000BB">$c</span><span style="color: #007700">,</span><span style="color: #DD0000">"des"</span><span style="color: #007700">)===</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">;&nbsp;}&nbsp;);<br></span><span style="color: #0000BB">$ciphers&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_filter</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$ciphers</span><span style="color: #007700">,&nbsp;function(</span><span style="color: #0000BB">$c</span><span style="color: #007700">)&nbsp;{&nbsp;return&nbsp;</span><span style="color: #0000BB">stripos</span><span style="color: #007700">(</span><span style="color: #0000BB">$c</span><span style="color: #007700">,</span><span style="color: #DD0000">"rc2"</span><span style="color: #007700">)===</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">;&nbsp;}&nbsp;);<br></span><span style="color: #0000BB">$ciphers&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_filter</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$ciphers</span><span style="color: #007700">,&nbsp;function(</span><span style="color: #0000BB">$c</span><span style="color: #007700">)&nbsp;{&nbsp;return&nbsp;</span><span style="color: #0000BB">stripos</span><span style="color: #007700">(</span><span style="color: #0000BB">$c</span><span style="color: #007700">,</span><span style="color: #DD0000">"rc4"</span><span style="color: #007700">)===</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">;&nbsp;}&nbsp;);<br></span><span style="color: #0000BB">$ciphers&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_filter</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$ciphers</span><span style="color: #007700">,&nbsp;function(</span><span style="color: #0000BB">$c</span><span style="color: #007700">)&nbsp;{&nbsp;return&nbsp;</span><span style="color: #0000BB">stripos</span><span style="color: #007700">(</span><span style="color: #0000BB">$c</span><span style="color: #007700">,</span><span style="color: #DD0000">"md5"</span><span style="color: #007700">)===</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">;&nbsp;}&nbsp;);<br></span><span style="color: #0000BB">$cipher_aliases&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_filter</span><span style="color: #007700">(</span><span style="color: #0000BB">$cipher_aliases</span><span style="color: #007700">,function(</span><span style="color: #0000BB">$c</span><span style="color: #007700">)&nbsp;{&nbsp;return&nbsp;</span><span style="color: #0000BB">stripos</span><span style="color: #007700">(</span><span style="color: #0000BB">$c</span><span style="color: #007700">,</span><span style="color: #DD0000">"des"</span><span style="color: #007700">)===</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">;&nbsp;}&nbsp;);<br></span><span style="color: #0000BB">$cipher_aliases&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_filter</span><span style="color: #007700">(</span><span style="color: #0000BB">$cipher_aliases</span><span style="color: #007700">,function(</span><span style="color: #0000BB">$c</span><span style="color: #007700">)&nbsp;{&nbsp;return&nbsp;</span><span style="color: #0000BB">stripos</span><span style="color: #007700">(</span><span style="color: #0000BB">$c</span><span style="color: #007700">,</span><span style="color: #DD0000">"rc2"</span><span style="color: #007700">)===</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">;&nbsp;}&nbsp;);<br><br></span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #0000BB">$ciphers</span><span style="color: #007700">);<br></span><span style="color: #0000BB">print_r</span><span style="color: #007700">(</span><span style="color: #0000BB">$cipher_aliases</span><span style="color: #007700">);<br></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></div>
+    </div>
+
+    <div class="example-contents"><p>The above example will output
+something similar to:</p></div>
+    <div class="example-contents screen">
+<div class="cdata"><pre>Array
+(
+    [0] =&gt; AES-128-CBC
+    [1] =&gt; AES-128-CFB
+    [2] =&gt; AES-128-CFB1
+    [3] =&gt; AES-128-CFB8
+    [5] =&gt; AES-128-OFB
+    [6] =&gt; AES-192-CBC
+    [7] =&gt; AES-192-CFB
+    [8] =&gt; AES-192-CFB1
+    [9] =&gt; AES-192-CFB8
+    [11] =&gt; AES-192-OFB
+    [12] =&gt; AES-256-CBC
+    [13] =&gt; AES-256-CFB
+    [14] =&gt; AES-256-CFB1
+    [15] =&gt; AES-256-CFB8
+    [17] =&gt; AES-256-OFB
+    [18] =&gt; BF-CBC
+    [19] =&gt; BF-CFB
+    [21] =&gt; BF-OFB
+    [22] =&gt; CAST5-CBC
+    [23] =&gt; CAST5-CFB
+    [25] =&gt; CAST5-OFB
+    [41] =&gt; IDEA-CBC
+    [42] =&gt; IDEA-CFB
+    [44] =&gt; IDEA-OFB
+    [53] =&gt; aes-128-cbc
+    [54] =&gt; aes-128-cfb
+    [55] =&gt; aes-128-cfb1
+    [56] =&gt; aes-128-cfb8
+    [58] =&gt; aes-128-ofb
+    [59] =&gt; aes-192-cbc
+    [60] =&gt; aes-192-cfb
+    [61] =&gt; aes-192-cfb1
+    [62] =&gt; aes-192-cfb8
+    [64] =&gt; aes-192-ofb
+    [65] =&gt; aes-256-cbc
+    [66] =&gt; aes-256-cfb
+    [67] =&gt; aes-256-cfb1
+    [68] =&gt; aes-256-cfb8
+    [70] =&gt; aes-256-ofb
+    [71] =&gt; bf-cbc
+    [72] =&gt; bf-cfb
+    [74] =&gt; bf-ofb
+    [75] =&gt; cast5-cbc
+    [76] =&gt; cast5-cfb
+    [78] =&gt; cast5-ofb
+    [94] =&gt; idea-cbc
+    [95] =&gt; idea-cfb
+    [97] =&gt; idea-ofb
+)
+Array
+(
+    [18] =&gt; AES128
+    [19] =&gt; AES192
+    [20] =&gt; AES256
+    [21] =&gt; BF
+    [26] =&gt; CAST
+    [27] =&gt; CAST-cbc
+    [50] =&gt; IDEA
+    [82] =&gt; aes128
+    [83] =&gt; aes192
+    [84] =&gt; aes256
+    [85] =&gt; bf
+    [90] =&gt; blowfish
+    [91] =&gt; cast
+    [92] =&gt; cast-cbc
+    [115] =&gt; idea
+)
+
+</pre></div>
+    </div>
+   </div>
+  
+ </div>
+
+
+ <div class="refsect1 seealso" id="refsect1-function.openssl-get-cipher-methods-seealso">
+  <h3 class="title">See Also<a class="genanchor" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#refsect1-function.openssl-get-cipher-methods-seealso"> ¶</a></h3>
+  <ul class="simplelist">
+    <li class="member"><span class="function"><a href="https://www.php.net/manual/en/function.openssl-get-md-methods.php" class="function" rel="rdfs-seeAlso">openssl_get_md_methods()</a> - Gets available digest methods</span></li>
+   </ul>
+  
+ </div>
+
+
+</div>
+<section id="usernotes">
+ <div class="head">
+  <span class="action"><a href="https://www.php.net/manual/add-note.php?sect=function.openssl-get-cipher-methods&amp;redirect=https://www.php.net/manual/en/function.openssl-get-cipher-methods.php"><img src="./PHP_ openssl_get_cipher_methods - Manual_files/notes-add@2x.png" alt="add a note" width="12" height="12"> <small>add a note</small></a></span>
+  <h3 class="title">User Contributed Notes <span class="count">2 notes</span></h3>
+ </div><div id="allnotes">
+  <div class="note" id="123319">  <div class="votes">
+    <div id="Vu123319">
+    <a href="https://www.php.net/manual/vote-note.php?id=123319&amp;page=function.openssl-get-cipher-methods&amp;vote=up" title="Vote up!" class="usernotes-voteu">up</a>
+    </div>
+    <div id="Vd123319">
+    <a href="https://www.php.net/manual/vote-note.php?id=123319&amp;page=function.openssl-get-cipher-methods&amp;vote=down" title="Vote down!" class="usernotes-voted">down</a>
+    </div>
+    <div class="tally" id="V123319" title="90% like this...">
+    9
+    </div>
+  </div>
+  <a href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#123319" class="name">
+  <strong class="user"><em>Alasdair</em></strong></a><a class="genanchor" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#123319"> ¶</a><div class="date" title="2018-11-08 01:29"><strong>2 years ago</strong></div>
+  <div class="text" id="Hcom123319" style="opacity: 1;">
+<div class="phpcode"><code><span class="html">
+With OpenSSL 1.1.1 this no longer returns the uppercase variants of the name, i.e. `AES-256-CBC` no longer exists but `aes-256-cbc` does.<br><br><a href="https://github.com/oerdnj/deb.sury.org/issues/990" rel="nofollow" target="_blank">https://github.com/oerdnj/deb.sury.org/issues/990</a></span>
+</code></div>
+  </div>
+ </div>
+  <div class="note" id="121662">  <div class="votes">
+    <div id="Vu121662">
+    <a href="https://www.php.net/manual/vote-note.php?id=121662&amp;page=function.openssl-get-cipher-methods&amp;vote=up" title="Vote up!" class="usernotes-voteu">up</a>
+    </div>
+    <div id="Vd121662">
+    <a href="https://www.php.net/manual/vote-note.php?id=121662&amp;page=function.openssl-get-cipher-methods&amp;vote=down" title="Vote down!" class="usernotes-voted">down</a>
+    </div>
+    <div class="tally" id="V121662" title="52% like this...">
+    1
+    </div>
+  </div>
+  <a href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#121662" class="name">
+  <strong class="user"><em>karel dot wintersky at gmail dot com</em></strong></a><a class="genanchor" href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php#121662"> ¶</a><div class="date" title="2017-09-20 11:29"><strong>3 years ago</strong></div>
+  <div class="text" id="Hcom121662" style="opacity: 1;">
+<div class="phpcode"><code><span class="html">
+May be useful for cyphers execution speed.<br><br><span class="default">&lt;?php<br><br></span><span class="keyword">const </span><span class="default">TEST_COUNT </span><span class="keyword">= </span><span class="default">100000</span><span class="keyword">;<br>const </span><span class="default">SOURCE </span><span class="keyword">= </span><span class="string">'Note that HTML tags are not allowed in the posts, but the note formatting is preserved.'</span><span class="keyword">;<br>const </span><span class="default">KEY </span><span class="keyword">= </span><span class="string">"password"</span><span class="keyword">;<br><br>function </span><span class="default">TESTER</span><span class="keyword">( </span><span class="default">$testing_function</span><span class="keyword">, </span><span class="default">$argument </span><span class="keyword">)<br>{<br>&nbsp; &nbsp; </span><span class="default">$t </span><span class="keyword">= </span><span class="default">microtime</span><span class="keyword">(</span><span class="default">true</span><span class="keyword">);<br><br>&nbsp; &nbsp; for (</span><span class="default">$test_iterator </span><span class="keyword">= </span><span class="default">0</span><span class="keyword">; </span><span class="default">$test_iterator </span><span class="keyword">&lt; </span><span class="default">TEST_COUNT</span><span class="keyword">; </span><span class="default">$test_iterator</span><span class="keyword">++) {<br>&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="default">$testing_function</span><span class="keyword">( </span><span class="default">$argument </span><span class="keyword">);<br>&nbsp; &nbsp; }<br>&nbsp; &nbsp; return </span><span class="default">round</span><span class="keyword">(</span><span class="default">microtime</span><span class="keyword">(</span><span class="default">true</span><span class="keyword">) - </span><span class="default">$t</span><span class="keyword">, </span><span class="default">4</span><span class="keyword">);<br>}<br><br></span><span class="default">$crypt </span><span class="keyword">= function(</span><span class="default">$cipher</span><span class="keyword">) {<br>&nbsp; &nbsp; </span><span class="default">$ivlen </span><span class="keyword">= </span><span class="default">openssl_cipher_iv_length</span><span class="keyword">(</span><span class="default">$cipher</span><span class="keyword">);<br>&nbsp; &nbsp; </span><span class="default">$iv </span><span class="keyword">= </span><span class="default">openssl_random_pseudo_bytes</span><span class="keyword">(</span><span class="default">$ivlen</span><span class="keyword">);<br>&nbsp; &nbsp; </span><span class="default">openssl_encrypt</span><span class="keyword">(</span><span class="default">SOURCE</span><span class="keyword">, </span><span class="default">$cipher</span><span class="keyword">, </span><span class="default">KEY</span><span class="keyword">, </span><span class="default">$options</span><span class="keyword">=</span><span class="default">0</span><span class="keyword">, </span><span class="default">$iv</span><span class="keyword">);<br>};<br><br></span><span class="default">$methods </span><span class="keyword">= </span><span class="default">openssl_get_cipher_methods</span><span class="keyword">(</span><span class="default">false</span><span class="keyword">);<br><br></span><span class="default">array_splice</span><span class="keyword">( </span><span class="default">$methods</span><span class="keyword">, </span><span class="default">0</span><span class="keyword">, </span><span class="default">count</span><span class="keyword">(</span><span class="default">$methods</span><span class="keyword">) / </span><span class="default">2</span><span class="keyword">);<br><br></span><span class="default">$timings </span><span class="keyword">= array();<br><br>foreach (</span><span class="default">$methods </span><span class="keyword">as </span><span class="default">$cypher</span><span class="keyword">) {<br>&nbsp; &nbsp; </span><span class="default">$time </span><span class="keyword">= </span><span class="default">TESTER</span><span class="keyword">( </span><span class="default">$crypt</span><span class="keyword">, </span><span class="default">$cypher </span><span class="keyword">);<br>&nbsp; &nbsp; </span><span class="default">$timings</span><span class="keyword">[ </span><span class="default">$cypher </span><span class="keyword">] = </span><span class="default">$time</span><span class="keyword">;<br>&nbsp; &nbsp; echo </span><span class="default">str_pad</span><span class="keyword">(</span><span class="default">$cypher</span><span class="keyword">, </span><span class="default">40</span><span class="keyword">, </span><span class="string">' '</span><span class="keyword">, </span><span class="default">STR_PAD_LEFT</span><span class="keyword">), </span><span class="string">" have time&nbsp; "</span><span class="keyword">, </span><span class="default">str_pad</span><span class="keyword">(</span><span class="default">$time</span><span class="keyword">, </span><span class="default">8</span><span class="keyword">, </span><span class="default">STR_PAD_LEFT</span><span class="keyword">), </span><span class="string">' seconds. '</span><span class="keyword">, </span><span class="default">PHP_EOL</span><span class="keyword">;<br>}<br><br></span><span class="default">uasort</span><span class="keyword">(</span><span class="default">$timings</span><span class="keyword">, function(</span><span class="default">$a</span><span class="keyword">, </span><span class="default">$b</span><span class="keyword">){<br>&nbsp; &nbsp; return </span><span class="default">$a </span><span class="keyword">&lt;=&gt; </span><span class="default">$b</span><span class="keyword">;<br>});<br><br></span><span class="default">$min_time </span><span class="keyword">= </span><span class="default">round</span><span class="keyword">(</span><span class="default">reset</span><span class="keyword">(</span><span class="default">$timings</span><span class="keyword">) / </span><span class="default">TEST_COUNT</span><span class="keyword">, </span><span class="default">7</span><span class="keyword">);<br></span><span class="default">$min_cypher </span><span class="keyword">= </span><span class="default">key</span><span class="keyword">(</span><span class="default">$timings</span><span class="keyword">);<br><br></span><span class="default">$max_time </span><span class="keyword">= </span><span class="default">round</span><span class="keyword">(</span><span class="default">end</span><span class="keyword">(</span><span class="default">$timings</span><span class="keyword">) / </span><span class="default">TEST_COUNT</span><span class="keyword">, </span><span class="default">7</span><span class="keyword">);<br></span><span class="default">$max_cypher </span><span class="keyword">= </span><span class="default">key</span><span class="keyword">(</span><span class="default">$timings</span><span class="keyword">);<br><br>echo </span><span class="string">'-------------'</span><span class="keyword">, </span><span class="default">PHP_EOL</span><span class="keyword">;<br>echo </span><span class="string">"Total tests: "</span><span class="keyword">, </span><span class="default">count</span><span class="keyword">(</span><span class="default">$timings</span><span class="keyword">), </span><span class="default">PHP_EOL</span><span class="keyword">;<br>echo </span><span class="string">"Max timing : </span><span class="keyword">{</span><span class="default">$max_time</span><span class="keyword">}</span><span class="string"> seconds for `</span><span class="keyword">{</span><span class="default">$max_cypher</span><span class="keyword">}</span><span class="string">` algorithm."</span><span class="keyword">, </span><span class="default">PHP_EOL</span><span class="keyword">;<br>echo </span><span class="string">"Min timing : </span><span class="keyword">{</span><span class="default">$min_time</span><span class="keyword">}</span><span class="string"> seconds for `</span><span class="keyword">{</span><span class="default">$min_cypher</span><span class="keyword">}</span><span class="string">` algorithm."</span><span class="keyword">, </span><span class="default">PHP_EOL</span><span class="keyword">;<br><br>echo </span><span class="string">'Details: '</span><span class="keyword">, </span><span class="default">PHP_EOL</span><span class="keyword">;<br><br>foreach (</span><span class="default">$timings </span><span class="keyword">as </span><span class="default">$m </span><span class="keyword">=&gt; </span><span class="default">$t</span><span class="keyword">) {<br>&nbsp; &nbsp; echo </span><span class="string">'- '</span><span class="keyword">, </span><span class="default">str_pad</span><span class="keyword">(</span><span class="default">$t</span><span class="keyword">, </span><span class="default">8</span><span class="keyword">, </span><span class="default">STR_PAD_LEFT</span><span class="keyword">), </span><span class="string">" seconds for `</span><span class="keyword">{</span><span class="default">$m</span><span class="keyword">}</span><span class="string">`"</span><span class="keyword">,&nbsp; </span><span class="default">PHP_EOL</span><span class="keyword">;<br>}<br><br>echo </span><span class="default">PHP_EOL</span><span class="keyword">;</span>
+</span>
+</code></div>
+  </div>
+ </div></div>
+
+ <div class="foot"><a href="https://www.php.net/manual/add-note.php?sect=function.openssl-get-cipher-methods&amp;redirect=https://www.php.net/manual/en/function.openssl-get-cipher-methods.php"><img src="./PHP_ openssl_get_cipher_methods - Manual_files/notes-add@2x.png" alt="add a note" width="12" height="12"> <small>add a note</small></a></div>
+</section>    </section><!-- layout-content -->
+        <aside class="layout-menu">
+
+        <ul class="parent-menu-list">
+                                    <li>
+                <a href="https://www.php.net/manual/en/ref.openssl.php">OpenSSL Functions</a>
+
+                                    <ul class="child-menu-list">
+
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-cipher-iv-length.php" title="openssl_​cipher_​iv_​length">openssl_​cipher_​iv_​length</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-csr-export-to-file.php" title="openssl_​csr_​export_​to_​file">openssl_​csr_​export_​to_​file</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-csr-export.php" title="openssl_​csr_​export">openssl_​csr_​export</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-csr-get-public-key.php" title="openssl_​csr_​get_​public_​key">openssl_​csr_​get_​public_​key</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-csr-get-subject.php" title="openssl_​csr_​get_​subject">openssl_​csr_​get_​subject</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-csr-new.php" title="openssl_​csr_​new">openssl_​csr_​new</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-csr-sign.php" title="openssl_​csr_​sign">openssl_​csr_​sign</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-decrypt.php" title="openssl_​decrypt">openssl_​decrypt</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-dh-compute-key.php" title="openssl_​dh_​compute_​key">openssl_​dh_​compute_​key</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-digest.php" title="openssl_​digest">openssl_​digest</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-encrypt.php" title="openssl_​encrypt">openssl_​encrypt</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-error-string.php" title="openssl_​error_​string">openssl_​error_​string</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-free-key.php" title="openssl_​free_​key">openssl_​free_​key</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-get-cert-locations.php" title="openssl_​get_​cert_​locations">openssl_​get_​cert_​locations</a>
+                        </li>
+                                                <li class="current">
+                            <a href="https://www.php.net/manual/en/function.openssl-get-cipher-methods.php" title="openssl_​get_​cipher_​methods">openssl_​get_​cipher_​methods</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-get-curve-names.php" title="openssl_​get_​curve_​names">openssl_​get_​curve_​names</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-get-md-methods.php" title="openssl_​get_​md_​methods">openssl_​get_​md_​methods</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-get-privatekey.php" title="openssl_​get_​privatekey">openssl_​get_​privatekey</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-get-publickey.php" title="openssl_​get_​publickey">openssl_​get_​publickey</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-open.php" title="openssl_​open">openssl_​open</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pbkdf2.php" title="openssl_​pbkdf2">openssl_​pbkdf2</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkcs12-export-to-file.php" title="openssl_​pkcs12_​export_​to_​file">openssl_​pkcs12_​export_​to_​file</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkcs12-export.php" title="openssl_​pkcs12_​export">openssl_​pkcs12_​export</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkcs12-read.php" title="openssl_​pkcs12_​read">openssl_​pkcs12_​read</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkcs7-decrypt.php" title="openssl_​pkcs7_​decrypt">openssl_​pkcs7_​decrypt</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkcs7-encrypt.php" title="openssl_​pkcs7_​encrypt">openssl_​pkcs7_​encrypt</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkcs7-read.php" title="openssl_​pkcs7_​read">openssl_​pkcs7_​read</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkcs7-sign.php" title="openssl_​pkcs7_​sign">openssl_​pkcs7_​sign</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkcs7-verify.php" title="openssl_​pkcs7_​verify">openssl_​pkcs7_​verify</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkey-export-to-file.php" title="openssl_​pkey_​export_​to_​file">openssl_​pkey_​export_​to_​file</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkey-export.php" title="openssl_​pkey_​export">openssl_​pkey_​export</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkey-free.php" title="openssl_​pkey_​free">openssl_​pkey_​free</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkey-get-details.php" title="openssl_​pkey_​get_​details">openssl_​pkey_​get_​details</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkey-get-private.php" title="openssl_​pkey_​get_​private">openssl_​pkey_​get_​private</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkey-get-public.php" title="openssl_​pkey_​get_​public">openssl_​pkey_​get_​public</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-pkey-new.php" title="openssl_​pkey_​new">openssl_​pkey_​new</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-private-decrypt.php" title="openssl_​private_​decrypt">openssl_​private_​decrypt</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-private-encrypt.php" title="openssl_​private_​encrypt">openssl_​private_​encrypt</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-public-decrypt.php" title="openssl_​public_​decrypt">openssl_​public_​decrypt</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-public-encrypt.php" title="openssl_​public_​encrypt">openssl_​public_​encrypt</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-random-pseudo-bytes.php" title="openssl_​random_​pseudo_​bytes">openssl_​random_​pseudo_​bytes</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-seal.php" title="openssl_​seal">openssl_​seal</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-sign.php" title="openssl_​sign">openssl_​sign</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-spki-export-challenge.php" title="openssl_​spki_​export_​challenge">openssl_​spki_​export_​challenge</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-spki-export.php" title="openssl_​spki_​export">openssl_​spki_​export</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-spki-new.php" title="openssl_​spki_​new">openssl_​spki_​new</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-spki-verify.php" title="openssl_​spki_​verify">openssl_​spki_​verify</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-verify.php" title="openssl_​verify">openssl_​verify</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-check-private-key.php" title="openssl_​x509_​check_​private_​key">openssl_​x509_​check_​private_​key</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-checkpurpose.php" title="openssl_​x509_​checkpurpose">openssl_​x509_​checkpurpose</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-export-to-file.php" title="openssl_​x509_​export_​to_​file">openssl_​x509_​export_​to_​file</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-export.php" title="openssl_​x509_​export">openssl_​x509_​export</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-fingerprint.php" title="openssl_​x509_​fingerprint">openssl_​x509_​fingerprint</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-free.php" title="openssl_​x509_​free">openssl_​x509_​free</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-parse.php" title="openssl_​x509_​parse">openssl_​x509_​parse</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-read.php" title="openssl_​x509_​read">openssl_​x509_​read</a>
+                        </li>
+                                                <li class="">
+                            <a href="https://www.php.net/manual/en/function.openssl-x509-verify.php" title="openssl_​x509_​verify">openssl_​x509_​verify</a>
+                        </li>
+                        
+                    </ul>
+                
+            </li>
+                        
+                    </ul>
+    </aside>
+
+
+  </div><!-- layout -->
+
+  <footer>
+    <div class="container footer-content">
+      <div class="row-fluid">
+      <ul class="footmenu">
+        <li><a href="https://www.php.net/copyright.php">Copyright © 2001-2020 The PHP Group</a></li>
+        <li><a href="https://www.php.net/my.php">My PHP.net</a></li>
+        <li><a href="https://www.php.net/contact.php">Contact</a></li>
+        <li><a href="https://www.php.net/sites.php">Other PHP.net sites</a></li>
+        <li><a href="https://www.php.net/privacy.php">Privacy policy</a></li>
+      </ul>
+      </div>
+    </div>
+  </footer>
+
+    
+ <!-- External and third party libraries. -->
+ <script src="./PHP_ openssl_get_cipher_methods - Manual_files/jquery.min.js.download"></script>
+<script src="./PHP_ openssl_get_cipher_methods - Manual_files/cached(4).php"></script>
+<script src="./PHP_ openssl_get_cipher_methods - Manual_files/cached(5).php"></script>
+<script src="./PHP_ openssl_get_cipher_methods - Manual_files/cached(6).php"></script>
+<script src="./PHP_ openssl_get_cipher_methods - Manual_files/cached(7).php"></script>
+<script src="./PHP_ openssl_get_cipher_methods - Manual_files/cached(8).php"></script>
+<script src="./PHP_ openssl_get_cipher_methods - Manual_files/cached(9).php"></script>
+
+<a id="toTop" href="javascript:;" style="display: inline;"><span id="toTopHover"></span><img width="40" height="40" alt="To Top" src="./PHP_ openssl_get_cipher_methods - Manual_files/to-top@2x.png"></a>
+
+
+
+</body></html>

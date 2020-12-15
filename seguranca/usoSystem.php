@@ -1,7 +1,7 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] === "POST"){
-    
+
     $cmd = escapeshellcmd($_POST["cmd"]);
 
     var_dump($cmd);
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
 
 
 <form method="POST">
-    
+
     <input type="text" name="cmd">
     <button type="sumbmit">Enviar</button>
 
